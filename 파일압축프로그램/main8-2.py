@@ -13,6 +13,7 @@ def compress_file_with_password(file_path, password):
         zip_file.writestr(file_path, data)
         
     if __name__ == '__main__':
+        
         # specify the file path and password
         
         compress_file_with_password('파일압축프로그램\압축.txt', '1234')
