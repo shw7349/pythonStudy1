@@ -15,6 +15,7 @@ email_pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-z|a-z]{2,}\b'
 # 웹 페이지에서 모든 테스트 추출
 text = soup.get_text()
 
+
 # 이메일 패턴 매칭 후 리스트에 추가
 for match in re.findall(email_pattern, text):
     emails.append(match)
